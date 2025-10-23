@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+body {
+    display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    background-image: url('img_bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.main-header {
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%; 
+    z-index: 10;
+    
+    background-color: #404040;
+    color: white;
+    padding: 6px 100px;
+    box-sizing: border-box;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.main-header .logo {
+    font-size: 19px;
+    font-family: Pretendard, serif; 
+    font-weight: 400;
+}
+.index-link {
+    color: #ffffff;
+    text-decoration: none; 
+}
+.index-link:hover {
+    color: rgba(255, 255, 255, 0.399); 
+}
+.main-header .nav-menu {
+    display: flex;
+    gap: 40px;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.main-header .nav-menu li a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: color 0.3s;
+    font-size: 11px;
+    font-family: Pretendard, serif; 
+    font-weight: 300;
+}
+.main-header .nav-menu li a:hover {
+    color: rgba(255, 255, 255, 0.399);
+}
+.image-main {
+  position: absolute;
+  right: 80%;        
+  top: 35%;          
+  transform: translateY(-50%);
+  z-index: 5;
+}
+
+.image-main img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; 
+    height: 100%;
+    object-fit: cover;
+}
+
+.image-hover {
+    opacity: 0;
+    transition: opacity 0.3s ease; 
+}
+
+.image-main:hover .image-hover {
+    opacity: 1;
+}
+.image-main img {
+  width: 600px;     
+  height: auto;
+  display: block;
+  text-align: center;
+}
+
+.main-text {
+  position: absolute; 
+  top: 40%; /* 여기 조정 가능 */
+  left: 25%;
+  transform: translateX(-50%);
+  text-align: center;
+  width: 400px;
+  line-height: 1.8;
+  font-size: 14px;
+  color: #555; 
+  font-family: "KoPub Batang", serif; 
+  white-space: normal;
+  word-break: keep-all;
+}
+
+.main-footer {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%; 
+    min-height: 200px;
+    z-index: 10;
+    margin-top: auto;
+
+    background-color: #404040; 
+    padding: 20px 0; 
+    font-family: retendard, serif;
+    font-size: 0.9em;
+    text-align: center;
+}
+.footer-logo {
+    width: 30px;
+    height: 30px;
+    margin-top: 15px;
+    margin-bottom: 30px
+}
+.main-footer .nav-menu {
+    display: flex;
+    gap: 40px;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main-footer .nav-menu li a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: color 0.3s;
+    font-size: 12px;
+    font-family: pretendard, serif; 
+    font-weight: midium;
+}
+
+.main-footer p {
+    color: rgba(255, 255, 255, 0.497);
+    font-size: 10px;
+    font-family: pretendard, serif;
+    font-weight: regular;
+}
+.footer-separator {
+    border: 0; 
+    height: 0.5px;
+    background-color: rgba(255, 255, 255, 0.2);
+    width: 20%;
+    margin: 30px auto;
+}
+
+.bg-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+    </style>
+</head>
+<body>
+    
+    <header class="main-header">
+         <h1 class="logo"><a href="http://127.0.0.1:5500/22561010_%EA%B6%8C%EC%84%B8%EB%A6%B0/%EC%A7%81%EB%AC%B4%EB%8A%A5%EB%A0%A5%EC%88%98%ED%96%89%ED%8F%89%EA%B0%80/index.html" class="index-link">DEMIAN</a></h1>
+        <ul class="nav-menu">
+            <li><a href="http://127.0.0.1:5500/22561010_%EA%B6%8C%EC%84%B8%EB%A6%B0/%EC%A7%81%EB%AC%B4%EB%8A%A5%EB%A0%A5%EC%88%98%ED%96%89%ED%8F%89%EA%B0%80/sub_anxiety.html">Anxiety</a></li>
+            <li><a href="http://127.0.0.1:5500/22561010_%EA%B6%8C%EC%84%B8%EB%A6%B0/%EC%A7%81%EB%AC%B4%EB%8A%A5%EB%A0%A5%EC%88%98%ED%96%89%ED%8F%89%EA%B0%80/sub_confusion.html">Confusion</a></li>
+            <li><a href="http://127.0.0.1:5500/22561010_%EA%B6%8C%EC%84%B8%EB%A6%B0/%EC%A7%81%EB%AC%B4%EB%8A%A5%EB%A0%A5%EC%88%98%ED%96%89%ED%8F%89%EA%B0%80/sub_Loneliness.html">Loneliness</a></li><li><a href="http://127.0.0.1:5500/22561010_%EA%B6%8C%EC%84%B8%EB%A6%B0/%EC%A7%81%EB%AC%B4%EB%8A%A5%EB%A0%A5%EC%88%98%ED%96%89%ED%8F%89%EA%B0%80/sub_aspiration.html">Aspiration</a></li>
+            <li><a href="http://127.0.0.1:5500/22561010_%EA%B6%8C%EC%84%B8%EB%A6%B0/%EC%A7%81%EB%AC%B4%EB%8A%A5%EB%A0%A5%EC%88%98%ED%96%89%ED%8F%89%EA%B0%80/sub_self-awakeness.html">Self-awareness</a></li>
+        </ul>
+    </header>
+
+    <main class="content-wrapper">
+  <img src="bookcover.png" alt="bg image" class="bg-image">
+</main>
+
+<div class="image-main">
+  <img src="img_main_bh.png" alt="main image" calss="image-default">
+  <img src="img_main.png" alt="hover image" class="image-hover">
+</div>
+
+<p class="main-text">
+“새는 알에서 나오려고 투쟁한다.<br>
+알은 세계이다.<br>
+태어나려는 자는 하나의 세계를 깨트려야 한다.”<br><br>
+- Hsrmann Hesse -
+</p>
+
+<footer class="main-footer">
+<img class="footer-logo" src="img_footer.png" alt="푸터 로고">
+<ul class="nav-menu">
+            <li><a>불안</a></li>
+            <li><a>혼란</a></li>
+            <li><a>고독</a></li>
+            <li><a>동경</a></li>
+            <li><a>자각</a></li>
+        </ul>
+        <div class="footer-separator"></div>
+        <p>&copy; Hermann Hesse, 『 DEMIAN 』</p>
+</footer>
+</body>
+</html>
